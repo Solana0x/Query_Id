@@ -1,0 +1,40 @@
+{
+    "name": "telegram-query-id-script",
+    "version": "1.0.0",
+    "description": "A Telegram Fully Automated Script to Get the Query Id from Multiple Telegram Accounts and Multiple '@miniapps' at once.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "build": "node index.js"
+    },
+    "keywords": [
+      "telegram",
+      "bot",
+      "QueryID",
+      "Get-Querid",
+      "Mini-Apps",
+      "App"
+    ],
+    "author": "0xSolana",
+    "license": "LICENCE",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Solana0x/Query_Id.git"
+    },
+    "bugs": {
+      "url": "https://github.com/Solana0x/Query_Id/issues"
+    },
+    "homepage": "https://github.com/Solana0x/Query_Id#readme",
+    "dependencies": {
+      "javascript-obfuscator": "^4.1.1",
+      "node-fetch": "^3.3.2",
+      "node-telegram-bot-api": "^0.66.0",
+      "telegram": "^2.24.11",
+      "telegram-bot-api": "^2.0.1",
+      "yargs": "^17.7.2"
+    },
+    "devDependencies": {},
+    "engines": {
+      "node": ">=14.0.0"
+    }
+  }
