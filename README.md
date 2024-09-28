@@ -9,13 +9,14 @@ This Node.js Telegram script manages Multi Telegram Account for All Mini Apps bo
 1. Clone the repo `git clone https://github.com/Solana0x/Query_Id.git`
 2. `cd Query_Id`
 3. Then `npm install`
-4. Then `add API ID and API HASH in index.js file`
-5. Then `node index.js`
-6. You can Choose to either Login Via `Phone Number` or `telegram session string`.
-7. Then choose `Request WebView for all accounts ` option
-8. Then enter `Please enter the bot peer (e.g., @YourBot):` here you have to enter the username of the telegram bot like `@blumCryptobot` or `@starmajorbot`.
-9. Then enter `Please enter the WebView URL:` here you have to enter the refferal link of your Telegram bot like this `https://t.me/blum/app?startapp=ref_4P0iHV9xlf`
-10. The Hit enter you will see your QueryID in form of TXT FILE in formate `Bot: @BlumCryptoBot | WebAppData: user=%7B%22id%22%3A6299188 `.
+4. create a .env file just like .env.example file
+5. Then `add API ID and API HASH in .env file`
+6. Then `node index.js`
+7. You can Choose to either Login Via `Phone Number` or `telegram session string`.
+8. Then choose `Request WebView for all accounts ` option
+9. Then enter `Please enter the bot peer (e.g., @YourBot):` here you have to enter the username of the telegram bot like `@blumCryptobot` or `@starmajorbot`.
+10. Then enter `Please enter the WebView URL:` here you have to enter the refferal link of your Telegram bot like this `https://t.me/blum/app?startapp=ref_4P0iHV9xlf`
+11. The Hit enter you will see your QueryID in form of TXT FILE in formate `Bot: @BlumCryptoBot | WebAppData: user=%7B%22id%22%3A6299188 `.
 
 
 # To Get API ID And API HASH 
