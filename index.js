@@ -1,3 +1,5 @@
+require('dotenv').config(); // Import dotenv
+
 const { Api, TelegramClient } = require('telegram');
 const { StringSession } = require('telegram/sessions');
 const fs = require('fs');
@@ -5,8 +7,8 @@ const path = require('path');
 const readline = require('readline');
 
 const intro = 'Telegram Query ID Bot';
-const apiId = ;  // Your actual API ID
-const apiHash = '';  // Your actual API Hash
+const apiId = Number(process.env.API_ID);  // Your actual API ID
+const apiHash = process.env.API_HASH;  // Your actual API Hash
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -84,6 +86,7 @@ async function loginWithSessionFile() {
 
             try {
                 const client = new TelegramClient(new StringSession(sessionData), apiId, apiHash, { connectionRetries: 5 });
+                await new Promise(resolve => setTimeout(resolve, 5000));  // Delay 5 detik
                 await client.start();
                 const phone = file.replace('.session', '');
                 console.log(`Logged in using session file: ${file}`);
@@ -104,6 +107,7 @@ async function loginWithSessionFile() {
 
         try {
             const client = new TelegramClient(new StringSession(sessionData), apiId, apiHash, { connectionRetries: 5 });
+            await new Promise(resolve => setTimeout(resolve, 5000));  // Delay 5 detik
             await client.start();
             const phone = selectedFile.replace('.session', '');
             console.log(`Logged in using session file: ${selectedFile}`);
@@ -113,7 +117,6 @@ async function loginWithSessionFile() {
         }
     }
 }
-
 
 // Function to request WebView for a client
 async function requestWebViewForClient(client, phoneNumber, botPeer, url) {
